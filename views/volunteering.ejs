@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head> 
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="/sign-up.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="/"><img src="/img/home/logo-brown-nobg.png" width="150" height="100" class="logo"></a>
+    </section>
+    <div class="container">
+        <div class="form-box">
+            <h3 id="title"> Volunteering Form </h3>
+            <form method="post" action="/volunteering">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Name" required>
+                    </div>
+                    <div class="input-field" id="emailField">
+                        <i class="fa solid fa-envelope"></i>
+                        <input type="email" name="email_id" placeholder="Email">
+                    </div>
+                    <div class="input-field" id="phoneField">
+                      <i class="fa solid fa-phone"></i>
+                      <input type="text" name="phone" placeholder="PhoneNo" minlength="10" maxlength="10">
+                  </div>
+                  <div class="input-field" id="locationField">
+                    <label style="margin: 5px;">Location</label>
+                    <input type="radio" id="B" name="location" value="Bengaluru">
+                    <label for="B">Bengaluru</label>
+                    <input type="radio" id="M" name="location" value="Mumbai">
+                    <label for="M">Mumbai</label>
+                    <input type="radio" id="C" name="location" value="Chennai">
+                    <label for="C">Chennai</label>
+                </div>
+                <div class="input-field" id="subscribedField">
+                  <label style="margin: 5px;">Previous experience ? </label>
+                  <input type="radio" id="yes" name="exp" value="Yes">
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="exp" value="No">
+                  <label for="no">No</label>
+              </div>
+                </div>
+                <div class="btn-field" style="margin-left: 120px;margin-top: 20px;">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
